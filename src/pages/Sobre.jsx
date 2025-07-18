@@ -87,7 +87,7 @@ export default function Sobre() {
             </p>
 
             <h2 className="text-3xl font-semibold my-10 text-center">Minhas competências</h2>
-            <div className="grid gap-6 grid-cols-[repeat(auto-fit,_minmax(180px,_2fr))]">
+            <div className="grid gap-10 grid-cols-[repeat(auto-fit,_minmax(180px,_2fr))]">
                 {skills.map((skill) => (
                     <SkillCard key={skill.name} skill={skill} />
                 ))}
