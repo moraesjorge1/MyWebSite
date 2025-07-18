@@ -44,16 +44,26 @@ export default function Sidebar() {
         />
       </div>
 
-      {/* Foto de perfil */}
+      {/* Logo no topo da sidebar */}
+      {/* Alterna entre a profile pic e logo dependendo do estado da sidebar */}
       <div className="flex justify-center mt-4">
-        <img
-          src="/profilepic.jpg"
-          alt="Minha foto"
-          className={`rounded-full border-1 shadow-md transition-all duration-300
-            ${open ? 'w-60 h-60' : 'w-10 h-10'}
-          `}
-        />
+        {open ? (
+          // Quando a sidebar estiver aberta, mostra a foto de perfil
+          <img
+            src="/profilepic.jpeg" // coloque sua imagem de perfil no public/ com esse nome
+            alt="Minha foto"
+            className="w-60 h-60 rounded-full border-0 shadow-md transition-all duration-300"
+          />
+        ) : (
+          // Quando a sidebar estiver fechada, mostra a logo
+          <img
+            src="/LogoJM.png"
+            alt="Logo JM"
+            className="w-12 h-12 transition-all duration-600"
+          />
+        )}
       </div>
+
 
       {/* Nome (visível somente se aberto) */}
       {open && (
