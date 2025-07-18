@@ -49,15 +49,18 @@ function SkillCard({ skill }) {
                 )}
             >
                 {/* Frente */}
-                <div className="absolute w-[90vw] h-[200px] md:w-full md:h-full backface-hidden bg-white dark:bg-blue-50 rounded-lg shadow-md flex flex-col items-center justify-center p-4 md:p-6">
+                <div className="absolute w-full max-w-[300px] h-36 sm:h-40 backface-hidden bg-white dark:bg-blue-50 rounded-lg shadow-md flex flex-col items-center justify-center p-4 md:p-6">
                     <div className="text-6xl mb-2">{skill.icon}</div>
-                    <span className="font-semibold text-gray-800 dark:text-gray-900 text-center">{skill.name}</span>
+                    <span className="font-semibold text-gray-800 dark:text-gray-900 text-center">
+                        {skill.name}
+                    </span>
                 </div>
 
                 {/* Verso */}
-                <div className="absolute w-full h-full backface-hidden bg-blue-500 dark:bg-blue-700 rounded-lg shadow-md flex flex-col items-center justify-center p-6 rotate-y-180">
+                <div className="absolute w-full max-w-[300px] h-36 sm:h-40 backface-hidden bg-blue-500 dark:bg-blue-700 rounded-lg shadow-md flex flex-col items-center justify-center p-4 md:p-6 rotate-y-180">
                     <span className="text-white font-bold text-xl">{skill.level}</span>
                 </div>
+
             </div>
         </div>
     );
@@ -65,7 +68,7 @@ function SkillCard({ skill }) {
 
 export default function Sobre() {
     return (
-        <div className="max-w-4xl mx-auto px-6 py-12 text-lg leading-relaxed">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 text-base sm:text-lg md:text-xl leading-relaxed md:pl-[250px]">
             <h1 className="text-5xl font-bold mb-8 text-center">Sobre mim</h1>
             <p className="mb-6">
                 Olá! Me chamo Jorge Neto e sou estudante de Ciência da Computação na UFRRJ. Apaixonado por tecnologia, gosto de resolver problemas com código e transformar ideias em soluções reais.

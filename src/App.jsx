@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="flex min-h-screen bg-white text-gray-900">
       <Sidebar />
-      <main className="flex-1 p-6 bg-blue-50">
+      <main className="flex-1 bg-blue-50 pl-[100px] md:pl-[250px] pr-4 py-6 transition-all duration-300">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contatos" element={<Contatos />} />
