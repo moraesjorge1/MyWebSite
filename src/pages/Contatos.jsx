@@ -1,10 +1,44 @@
-import { FaInstagram, FaDiscord, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import {
+    FaInstagram,
+    FaDiscord,
+    FaTwitter,
+    FaLinkedin,
+    FaGithub,
+    FaPhoneAlt,
+    FaEnvelope,
+} from 'react-icons/fa';
 
 export default function Contato() {
     return (
-        <div class="pl-8 grid grid-fl-col grid-rows-2 gap-y-30">
-            <h1 className="text-9xl font-bold mb-10 text-center">Entre em contato</h1>
-            <div className="flex flex-wrap justify-center gap-10 text-[10rem] pl-10">
+        <div className="pl-4 pr-4 py-10 grid gap-12">
+            {/* Informações de contato */}
+            <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {/* Telefone */}
+                <div className="flex items-center bg-blue-100 border border-blue-200 rounded-xl shadow-md p-4 gap-4 hover:scale-[1.02] transition-all duration-300">
+                    <FaPhoneAlt className="text-blue-600 text-2xl min-w-[32px]" />
+                    <div>
+                        <p className="text-sm text-gray-600">Telefone</p>
+                        <p className="text-lg font-semibold text-gray-900">(21) 98889-7291</p>
+                    </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center bg-blue-100 border border-blue-200 rounded-xl shadow-md p-4 gap-4 hover:scale-[1.02] transition-all duration-300">
+                    <FaEnvelope className="text-blue-600 text-2xl min-w-[32px]" />
+                    <div>
+                        <p className="text-sm text-gray-600">Email</p>
+                        <p className="text-lg font-semibold text-gray-900">morxesjorge@outlook.com</p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Título */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center text-gray-800">
+                Ou
+            </h1>
+
+            {/* Ícones sociais */}
+            <div className="flex flex-wrap justify-center gap-8 sm:gap-10 text-[3rem] sm:text-[4rem] md:text-[5rem]">
                 <a href="https://instagram.com/seu_usuario" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="hover:text-pink-500 hover:scale-110 transition-transform duration-300" />
                 </a>
@@ -14,44 +48,13 @@ export default function Contato() {
                 <a href="https://twitter.com/seu_usuario" target="_blank" rel="noopener noreferrer">
                     <FaTwitter className="hover:text-blue-400 hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a href="https://linkedin.com/in/seu_usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/jorge-de-moraes-im/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin className="hover:text-blue-500 hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a href="https://github.com/seu_usuario" target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="hover:text-gray-300 hover:scale-110 transition-transform duration-300" />
-                </a>
-            </div>
-        </div>
-
-    )
-
-}
-
-
-
-/*export default function Contato() {
-    return (
-        <div className="min-h-screen bg-gradient-to-r from-blue-900 to-black flex flex-col items-center justify-center text-white px-4">
-
-            <h1 className="text-4xl font-bold mb-10 text-center">Entre em contato</h1>
-
-            <div className="flex flex-wrap justify-center gap-10 text-6xl">
-                <a href="https://instagram.com/seu_usuario" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram className="hover:text-pink-500 hover:scale-110 transition-transform duration-300" />
-                </a>
-                <a href="https://discord.com/users/seu_id" target="_blank" rel="noopener noreferrer">
-                    <FaDiscord className="hover:text-indigo-400 hover:rotate-[15deg] hover:scale-110 transition-transform duration-300" />
-                </a>
-                <a href="https://twitter.com/seu_usuario" target="_blank" rel="noopener noreferrer">
-                    <FaTwitter className="hover:text-blue-400 hover:scale-110 transition-transform duration-300" />
-                </a>
-                <a href="https://linkedin.com/in/seu_usuario" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="hover:text-blue-500 hover:scale-110 transition-transform duration-300" />
-                </a>
-                <a href="https://github.com/seu_usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/moraesjorge1" target="_blank" rel="noopener noreferrer">
                     <FaGithub className="hover:text-gray-300 hover:scale-110 transition-transform duration-300" />
                 </a>
             </div>
         </div>
     );
-}*/
+}
