@@ -10,24 +10,26 @@ import {
 
 export default function Contato() {
     return (
-        <div className="pl-4 pr-4 py-10 grid gap-12">
-            {/* Informações de contato */}
-            <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="px-4 sm:px-6 lg:px-8 py-10 grid gap-12">
+
+            {/* Informações de contato responsivas */}
+            <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+
                 {/* Telefone */}
-                <div className="flex items-center bg-blue-100 border border-blue-200 rounded-xl shadow-md p-4 gap-4 hover:scale-[1.02] transition-all duration-300">
+                <div className="flex items-center bg-blue-100 border border-blue-200 rounded-xl shadow-md p-4 sm:p-6 gap-4 hover:scale-[1.02] transition-transform duration-300">
                     <FaPhoneAlt className="text-blue-600 text-2xl min-w-[32px]" />
                     <div>
-                        <p className="text-sm text-gray-600">Telefone</p>
-                        <p className="text-lg font-semibold text-gray-900">(21) 98889-7291</p>
+                        <p className="text-sm sm:text-base text-gray-600">Telefone</p>
+                        <p className="text-base sm:text-lg font-semibold text-gray-900">(21) 98889-7291</p>
                     </div>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-center bg-blue-100 border border-blue-200 rounded-xl shadow-md p-4 gap-4 hover:scale-[1.02] transition-all duration-300">
+                <div className="flex items-center bg-blue-100 border border-blue-200 rounded-xl shadow-md p-4 sm:p-6 gap-4 hover:scale-[1.02] transition-transform duration-300">
                     <FaEnvelope className="text-blue-600 text-2xl min-w-[32px]" />
                     <div>
-                        <p className="text-sm text-gray-600">Email</p>
-                        <p className="text-lg font-semibold text-gray-900">morxesjorge@outlook.com</p>
+                        <p className="text-sm sm:text-base text-gray-600">Email</p>
+                        <p className="text-base sm:text-lg font-semibold text-gray-900">morxesjorge@outlook.com</p>
                     </div>
                 </div>
             </div>
