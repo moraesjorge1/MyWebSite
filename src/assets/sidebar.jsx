@@ -30,7 +30,7 @@ export default function Sidebar() {
 
   return (
     <nav
-      className={`shadow-md min-h-screen p-2 bg-blue-100 transition-all duration-300
+      className={`shadow-md min-h-screen p-2 bg-[#6FAFA5] transition-all duration-300
         ${open ? 'w-72' : 'w-20'}
         fixed md:relative z-40
       `}

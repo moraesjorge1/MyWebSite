@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="flex min-h-screen bg-white text-gray-900">
       <Sidebar />
-      <main className="flex-1 bg-blue-50 pl-[100px] md:pl-[100px] pr-4 py-6 transition-all duration-300">
+      <main className="flex-1 bg-green-100 pl-[100px] md:pl-[100px] pr-4 py-6 transition-all duration-300">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contatos" element={<Contatos />} />

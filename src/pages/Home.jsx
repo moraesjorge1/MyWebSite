@@ -2,7 +2,7 @@ import Tilt from 'react-parallax-tilt';
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-blue-50 justify-center p-20">
+    <div className="min-h-screen w-full bg-green-100 justify-center p-20">
       <div className="flex">
         <div className="max-w-4xl mx-auto px-4">
           {/* Títulos Responsivos */}
