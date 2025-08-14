@@ -50,7 +50,7 @@ export default function Sidebar() {
         {open ? (
           // Quando a sidebar estiver aberta, mostra a foto de perfil
           <img
-            src="/profilepic.jpeg" // coloque sua imagem de perfil no public/ com esse nome
+            src="/picatt.jpg" // coloque sua imagem de perfil no public/ com esse nome
             alt="Minha foto"
             className="w-60 h-60 rounded-full border-0 shadow-md transition-all duration-300"
           />
