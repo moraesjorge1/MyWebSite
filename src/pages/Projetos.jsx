@@ -9,6 +9,14 @@ export default function Projetos() {
             descricao:
                 "É uma aplicação completa de um e-commerce de roupas, tendo funcionamentos como: Interação com produtos, Login/Logout, Cadastro de user, Carrinho funcional e Estoque completo.",
             github: "https://github.com/moraesjorge1/WestSideWebApplication"
+        },
+        {
+            titulo: "Análise de Sistemas de Recomendação (Analise-RecSys)",
+            categoria: "Análise de Dados / Sistemas de Recomendação",
+            ano: "2024",
+            descricao:
+                "Este projeto implementa uma análise comparativa entre abordagens de sistemas de recomendação: model-based e memory-based. A análise foi realizada utilizando a linguagem **Julia**, com o objetivo de explorar o desempenho de ambas as abordagens utilizando dados de usuários. A avaliação das abordagens é feita com base em métricas como **RMSE** (Root Mean Square Error) e **precisão**. O projeto tem como foco a análise de algoritmos de recomendação, buscando entender os pontos fortes e fracos de cada abordagem em cenários práticos.",
+            github: "https://github.com/moraesjorge1/Analise-RecSys"
         }
     ];
 
