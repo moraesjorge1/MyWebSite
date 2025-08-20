@@ -41,13 +41,13 @@ export default function Contato() {
 
             {/* Ícones sociais */}
             <div className="flex flex-wrap justify-center gap-8 sm:gap-10 text-[3rem] sm:text-[4rem] md:text-[5rem]">
-                <a href="https://instagram.com/seu_usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/morxesjorge" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="hover:text-pink-500 hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a href="https://discord.com/users/seu_id" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.com/users/moraesjorge" target="_blank" rel="noopener noreferrer">
                     <FaDiscord className="hover:text-indigo-400 hover:rotate-[360deg] hover:scale-110 transition-transform duration-300" />
                 </a>
-                <a href="https://twitter.com/seu_usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/morxesjorgi" target="_blank" rel="noopener noreferrer">
                     <FaTwitter className="hover:text-blue-400 hover:scale-110 transition-transform duration-300" />
                 </a>
                 <a href="https://www.linkedin.com/in/jorge-de-moraes-im/" target="_blank" rel="noopener noreferrer">
